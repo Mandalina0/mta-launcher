@@ -1,4 +1,4 @@
-import base64
+#import base64 not yet
 from multiprocessing import connection
 import time
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -22,7 +22,7 @@ mydb = mysql.connector.connect(
 )
 cur = mydb.cursor()
 
-class hosgeldin(object):
+class mainLauncher(object):
     def __init__(self,*args, **kwargs):
         super().__init__(*args, **kwargs)
         self.setupUi(mainLogin)
@@ -269,7 +269,7 @@ class Ui_mainLogin(QLabel,QMainWindow,QWidget,object):
                 f.write(p)
                 f.close()
                 self.window = QtWidgets.QMainWindow()
-                self.ui = hosgeldin()
+                self.ui = mainLauncher()
                 self.ui.setupUi(self.window)
                 mainLogin.hide()
                 self.window.show()
