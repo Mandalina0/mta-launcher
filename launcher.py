@@ -1,6 +1,5 @@
 import base64
 from multiprocessing import connection
-
 import time
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt
@@ -13,8 +12,6 @@ import mysql.connector
 import os
 import random
 from plyer import notification
-
-
 
 
 mydb = mysql.connector.connect(
@@ -312,7 +309,6 @@ class Ui_mainLogin(QLabel,QMainWindow,QWidget,object):
         self.loginToRegister.setText(_translate("mainLogin", "register."))
         
 import fotograflar_rc
-
 
 
 if __name__ == "__main__":
